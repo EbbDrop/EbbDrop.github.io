@@ -15,7 +15,7 @@
         <div id="header">
             <h1 id="name">Ebbe Steenhoudt</h1>
             <h2 id="tagline">Hobby programmer</h2>
-            <p id="story">Hi, I am <span id="age"></span>old. I have been programming since I was 7 and have been loving it ever since.
+            <p id="story">Hi, I have been programming since I was 7 and have been loving it ever since.
                 My first released game was made with scratch and
                 can be found <a href="https://scratch.mit.edu/projects/3133211/">here</a>.
                 My more resent projects can be found below. I am currently in high school taking programming lessons to hopefully
@@ -95,23 +95,4 @@
             </table>
         </div>
     </body>
-    <script>
-        function setAge() {
-            var ageseconds = (new Date() - new Date(2003, 01, 31, 12, 00, 00)) / 1000;
-            var ageyears = Math.floor(ageseconds / 31556926);
-            ageseconds -= ageyears * 31556926;
-            var agemonths = Math.floor(ageseconds / 2629743.83);
-            ageseconds -= agemonths * 2629743.83;
-            var agedays = Math.floor(ageseconds / 86400);
-            ageseconds -= agedays * 86400;
-            var agehours = Math.floor(ageseconds / 3600);
-            ageseconds -= agehours * 3600;
-            var ageminutes = Math.floor(ageseconds / 60);
-            ageseconds -= ageminutes * 60;
-            ageseconds = Math.floor(ageseconds);
-            var agespan = document.getElementById("age").innerText = " " + ageyears + " year " + agemonths + " months " + agedays + " days " + agehours + " hours " + ageminutes + " minutes and " + ageseconds + " seconds ";
-        }
-        setInterval(setAge, 1000);
-        setAge();
-    </script>
 </html>
