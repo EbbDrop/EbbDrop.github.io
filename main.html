@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ebbe Steenhoudt</title>
+        <link href="fontawsome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <ul id="navbar">
+            <img src="logo.png" id="logo">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div id="header">
+            <h1 id="name">Ebbe Steenhoudt</h1>
+            <h2 id="tagline">Hobby programmer</h2>
+            <p id="story">Hi, I am <span id="age"></span>old. I have been programming since I was 7 and have been loving it ever since.
+                My first released game was made with scratch and
+                can be found <a href="https://scratch.mit.edu/projects/3133211/">here</a>.
+                My more resent projects can be found below. I am currently in high school taking programming lessons to hopefully
+                program full time later. If you have a project you want to work on with me you can contact me below.
+            </p>
+        </div>
+        <div id="projects">
+            <h1>My projects</h1>
+            <table id="project-table">
+                <tbody>
+                    <tr>
+                        <th>
+                            <a href="https://ebbdrop.itch.io/connect-four-plus">
+                                <div class="names">Connect Four+</div>
+                                <img class="project-pic" src="projects/connect-four-plus.png">
+                                <div class="taglines">The classic game with battle!</div>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="https://ebbdrop.itch.io/color-turn">
+                                <div class="names">Color Turn</div>
+                                <img class="project-pic" src="projects/color-turn.png">
+                                <div class="taglines">A game coded in only 560 characters!</div>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="https://ebbdrop.itch.io/only-one-line">
+                                <div class="names">Only one line</div>
+                                <img class="project-pic" src="projects/only-one-line.png">
+                                <div class="taglines">Program a robot using only one line!</div>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="https://ebbdrop.itch.io/formule">
+                                <div class="names">Formule</div>
+                                <img class="project-pic" src="projects/formule.png">
+                                <div class="taglines">Practice your trigonometric identities!</div>
+                            </a>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <table id="contact-table">
+                <tbody>
+                    <tr>
+                        <th>
+                            <a href="mailto:ebbesteenhoudt@gmail.com">
+                                <i class="icons fas fa-envelope"></i>
+                                <div class="contact-name">Email</div>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="https://github.com/EbbDrop">
+                                <i class="icons fab fa-github"></i>
+                                <div class="contact-name">Github</div>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="https://twitter.com/EbbDrop">
+                                <i class="icons fab fa-twitter"></i>
+                                <div class="contact-name">Twitter</div>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="https://ebbdrop.itch.io/">
+                                <i class="icons fab fa-itch-io"></i>
+                                <div class="contact-name">itch.io</div>
+                            </a>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script>
+        function setAge() {
+            var ageseconds = (new Date() - new Date(2003, 01, 31, 12, 00, 00)) / 1000;
+            var ageyears = Math.floor(ageseconds / 31556926);
+            ageseconds -= ageyears * 31556926;
+            var agemonths = Math.floor(ageseconds / 2629743.83);
+            ageseconds -= agemonths * 2629743.83;
+            var agedays = Math.floor(ageseconds / 86400);
+            ageseconds -= agedays * 86400;
+            var agehours = Math.floor(ageseconds / 3600);
+            ageseconds -= agehours * 3600;
+            var ageminutes = Math.floor(ageseconds / 60);
+            ageseconds -= ageminutes * 60;
+            ageseconds = Math.floor(ageseconds);
+            var agespan = document.getElementById("age").innerText = " " + ageyears + " year " + agemonths + " months " + agedays + " days " + agehours + " hours " + ageminutes + " minutes and " + ageseconds + " seconds ";
+        }
+        setInterval(setAge, 1000);
+        setAge();
+    </script>
+</html>

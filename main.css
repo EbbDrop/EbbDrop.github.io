@@ -1,0 +1,137 @@
+@font-face { font-family: Comfortaa; src: url('webfonts/Comfortaa-Regular.ttf'); } 
+@font-face { font-family: Comfortaa; font-weight: bold; src: url('webfonts/Comfortaa-Bold.ttf');}
+@font-face { font-family: Comfortaa; font-weight: lighter; src: url('webfonts/Comfortaa-Light.ttf');}
+
+html {
+    background-color: #272727;
+}
+
+body {
+    margin: 0;
+    background-color: #272727;
+    font-family: Comfortaa;
+    color: white;
+    text-align: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #C9C9C9;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+    height: 5em;
+}
+
+#navbar > li {
+  float: right;
+}
+
+#navbar > li > a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  line-height: 4em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#navbar > li > a:hover {
+  background-color: #333333;
+}
+
+#logo {
+    float: left;
+    width: 4em;
+    height: 4em;
+    padding: 0.5em;
+}
+
+#header {
+    background-image: url('headerIMG.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#name {
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+    padding-top: 2em;
+}
+
+#tagline {
+    margin: 0;
+    padding-bottom: 2em;
+    font-size: 2em;
+}
+
+#story {
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    padding-bottom: 8em;
+    font-size: 1.25em;
+}
+
+#project-table {
+    margin: auto;
+    width: 50em;
+}
+
+#project-table > tbody > tr > th {
+    width: 8em;
+    height: 8em;
+}
+
+.project-pic {
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 0.2em;
+    border-color: white;
+}
+
+.project-pic:hover {
+    border-color: #C9C9C9;
+}
+
+.names {
+    font-size: 1.5em;
+    padding-top: 2em;
+}
+
+.taglines {
+    padding-bottom: 2em;
+}
+
+#contact {
+    background-color: black;
+    padding-bottom: 5em;
+}
+#contact > h1 {
+    padding-top: 1em;
+}
+
+#contact-table {
+    margin: auto;
+    width: 50%;
+}
+
+#contact-table > tbody > tr > th {
+    width: 16em;
+}
+
+.icons {
+    font-size: 2.5em;
+}
+
+.contact-name {
+    height: 2em;
+}
