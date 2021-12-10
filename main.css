@@ -93,12 +93,15 @@ a:hover {
 
 #project-table {
     margin: auto;
-    width: 50em;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#project-table > tbody > tr > th {
-    width: 8em;
-    height: 8em;
+.project {
+    flex: 1;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .project-pic {
@@ -144,4 +147,14 @@ a:hover {
 
 .contact-name {
     height: 2em;
+}
+
+
+@media (max-width: 480px) {
+    #name {
+        font-size: 3em;
+    }
+    #story, #contact-table, #project-table {
+        width: 90%;
+    }
 }
