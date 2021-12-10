@@ -27,7 +27,7 @@ a:hover {
     margin: 0;
     padding: 0;
     background-color: #272727;
-    height: 5rem;
+    height: 5em;
 }
 
 #navbar > li {
@@ -37,10 +37,10 @@ a:hover {
 #navbar > li > a {
   text-decoration: none;
   display: block;
-  padding: 0.5rem;
-  line-height: 4rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 0.5em;
+  line-height: 4em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 #navbar > li > a:hover {
@@ -49,9 +49,9 @@ a:hover {
 
 #logo {
     float: left;
-    width: 4rem;
-    height: 4rem;
-    padding: 0.5rem;
+    width: 4em;
+    height: 4em;
+    padding: 0.5em;
 }
 
 #header {
@@ -71,24 +71,24 @@ a:hover {
 }
 
 #name {
-    font-size: 5rem;
+    font-size: 5em;
     margin: 0;
     padding: 0;
-    padding-top: 2rem;
+    padding-top: 2em;
 }
 
 #tagline {
     margin: 0;
-    padding-bottom: 2rem;
-    font-size: 2rem;
+    padding-bottom: 2em;
+    font-size: 2em;
 }
 
 #story {
     margin: auto;
     width: 50%;
     text-align: left;
-    padding-bottom: 8rem;
-    font-size: 1.25rem;
+    padding-bottom: 8em;
+    font-size: 1.25em;
 }
 
 #project-table {
@@ -100,14 +100,14 @@ a:hover {
 
 .project {
     flex: 1;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .project-pic {
     border-style: solid;
-    border-width: 0.2rem;
-    border-radius: 0.2rem;
+    border-width: 0.2em;
+    border-radius: 0.2em;
     border-color: white;
 }
 
@@ -116,20 +116,20 @@ a:hover {
 }
 
 .names {
-    font-size: 1.5rem;
-    padding-top: 2rem;
+    font-size: 1.5em;
+    padding-top: 2em;
 }
 
 .taglines {
-    padding-bottom: 2rem;
+    padding-bottom: 2em;
 }
 
 #contact {
     background-color: black;
-    padding-bottom: 5rem;
+    padding-bottom: 5em;
 }
 #contact > h1 {
-    padding-top: 1rem;
+    padding-top: 1em;
 }
 
 #contact-table {
@@ -138,21 +138,21 @@ a:hover {
 }
 
 #contact-table > tbody > tr > th {
-    width: 16rem;
+    width: 16em;
 }
 
 .icons {
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
 .contact-name {
-    height: 2rem;
+    height: 2em;
 }
 
 
 @media (max-width: 480px) {
     #name {
-        font-size: 3rem;
+        font-size: 3em;
     }
     #story, #contact-table, #project-table {
         width: 90%;
